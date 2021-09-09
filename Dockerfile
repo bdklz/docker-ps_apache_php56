@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root
 
 # timezone / date   
-RUN echo "Europe/Berlin" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
+RUN echo "Asia/Shanghai" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
 # install packages
 RUN apt-get update && \
